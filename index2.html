@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- <meta charset=unicode> -->
+		<title>Центр изучения продуктов Microsoft</title>
+		<meta charset="utf-8">
+		<link href="Files\Styles\styles.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="Files\Scripts\jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="Files\Scripts\script.js"></script>
+		<script type="text/javascript" src="Files\Scripts\blur.js"></script> <!--blur-->
+		<link rel="shortcut icon" href="Files\Images\favicon.png" type="image/png">
+	</head>
+	<body class="preload">
+		<div id="header">
+			<img src="Files\Images\Site_header_1.png" height="75" alt="Header сайта"></img>
+		</div>
+		<div id="overtextbg">
+			<div id="textbg">
+				<div id="wrapper">
+					<ul class="menu">
+						<li id="menu_p_1"><a href="" title="Домой"><img id="menu_p_1_img_1" src="Files\Images\General_home_1.png" alt="Home" width="64" height="64"></img></a></li>
+						<li id="menu_p_2"><a href="" title="Windows+Office"><img id="menu_p_2_img_1" src="Files\Images\Windows_Windows_plus_Office_1.png" alt="Windows+Office" height="64"></a>
+							<ul>
+		                    	<li><a onclick="showmaterial(Windows)">Знакомство с Windows</a></li>
+		                    	<li><a onclick="showmaterial(Office)">Знакомство с Office</a></li>
+		                    	<li><a onclick="showmaterial(OfficeOnline)">Office Online+Office Lens</a></li>
+		                    </ul>
+		                </li>
+						<li id="menu_p_3"><a href="" title="Windows Phone+Windows RT"><img id="menu_p_3_img_1" src="Files\Images\Windows_WP_plus_RT_1.png" alt="Windows Phone+Windows RT" height="64"></a>
+							<ul>
+		                    	<li><a onclick="showmaterial(WP)">Windows Phone</a></li>
+		                    	<li><a onclick="showmaterial(WinRT)">Windows RT</a></li>
+		                    </ul>
+						</li>
+						<li id="menu_p_4"><a href="" title="Outlook.com+Bing"><img id="menu_p_4_img_1" src="Files\Images\Windows_Outlook_plus_Bing_1.png" alt="Outlook.com+Bing" height="64"></a>
+							<ul>
+		                    	<li><a onclick="showmaterial(Outlook)">Outlook.com - сервисы</a></li>
+		                    	<li><a onclick="showmaterial(OneDrive)">OneDrive</a></li>
+		                    </ul>
+						</li>
+						<li id="menu_p_5"><a href=""><img id="menu_p_5_img_1" src="Files\Images\General_Arrow_1.png" alt="More" height="64"></a>
+							<ul>
+		                    	<li><a onclick="changetheme()">Сменить тему</a></li>
+		                    	<li><a href="">О сайте</a></li>
+		                    </ul>
+						</li>
+					</ul>
+					<div id="Navi">
+						<div>
+						Это главная страница. Коснитесь любого из пунктов меню.
+						</div>
+						<span>   • • •   </span>
+					</div>
+					<div id="Global_News_block">
+						<h2>Добро пожаловать в центр изучения продуктов Microsoft!</h2>
+						<span class="gen_text1">
+							Здесь вы можете выбрать, какой именно продукт изучать, узнать, что он из себя представляет, а также узнать последние новости из IT-мира Microsoft и не только.<br>
+							Просто коснитесь меню.
+						</span>
+						<!--<img width="800" src="Files\Images\Sample_1.jpg"></img>-->						
+					</div>
+					<div id="gototest" class="button_1" onclick="viewtest()">Пройти тест</div>
+					<input id="btn" type="button" value="Сменить припиндун" onclick="show()">
+				</div>
+				<div id="Windows">
+					<h2>Ваше первое знакомство с Windows</h2>
+					<h3>Познакомьтесь с Windows 8.1 with Update</h3>
+					Посмотрите это видео. Вы увидите преимущества Windows 8.1 и узнаете, как она совмещает удобство планшета и продуктивность ноутбука.
+					<br>
+					Here's will be a video but it's take more than 16 MB, so I ignore it
+					<!-- <video controls="controls">
+						<source src="Files\Movies\Windows_intro_1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					</video> -->
+				</div>
+				<div id="Office">
+					<h2><img src="Files\Images\Office_1.png" alt="Microsoft Office"></img></h2>
+					<h3>Office 2013 & Office RT</h3>
+					Office - инновационный продукт, призванный создавать, генерировать, редактировать и управлять информацией, которую мы запоминаем, записываем и рисуем.
+
+					В состав Office входят:
+					<table align="center">
+						<tr>
+						    <th>Программа</th>
+						    <th>Тип</th>
+						    <th>Основное расширение</th>
+						</tr>
+						<tr>
+						    <td>Word</td>
+						    <td>Текстовый процессор, а проще - редактор. Самый популярный текстовый редатор на планете Земля, им пользуется каждый первый человек</td>
+						    <td>.docx</td>
+						</tr>
+						<tr>
+						    <td>Excel</td>
+						    <td>Табличный процессор, позволяет строить диаграммы, производить вычисления динамически. Присутствует выборка, анализ и вывод данных</td>
+						    <td>.xlsx</td>
+						</tr>
+						<tr>
+						    <td>PowerPoint</td>
+						    <td>Популярнейшая программа для создания интерактивных презентаций, лучшая замена яблочному KeyNote. С помощью этой программы <a href="https://vk.com/wall112123934?q=%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BB%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8E">Kenya-West сделал ряд наикрутейших презентаций</a></td>
+						    <td>.pptx<br>
+						    .ppsx</td>
+						</tr>
+						<tr>
+						    <td>OneNote</td>
+						    <td>Ваша персональная записная книжка. Благодаря интеграции с OneDrive можно делиться, давать общий доступ другим людям. Попробуйте - <a href="Onenote.com">OneNote.com</a>. Программа есть также и на Android, iOS и Windows Phone</td>
+						    <td>нет</td>
+						</tr>
+						<tr>
+						    <td>Outlook</td>
+						    <td>Персональный коммуникатор. В состав Outlook входят: календарь, планировщик задач, записки, менеджер электронной почты, адресная книга. Поддерживается совместная сетевая работа.</td>
+						    <td>.pptx<br>
+						    .ppsx</td>
+						</tr>
+						<tr>
+						    <td>Access</td>
+						    <td>приложение для управления базами данных</td>
+						    <td>.accdb</td>
+						</tr>
+						<tr>
+						    <td>Access</td>
+						    <td>приложение для управления базами данных</td>
+						    <td>.accdb</td>
+						</tr>
+						<tr>
+						    <td>Access</td>
+						    <td>приложение для управления базами данных</td>
+						    <td>.accdb</td>
+						</tr>
+						<tr>
+						    <td>Publisher</td>
+						    <td>приложение для подготовки публикаций</td>
+						    <td>.pub</td>
+						</tr>
+					</table>
+				</div>
+				<div id="OfficeOnline">
+					<h2><a href="Office.com"><img src="Files\Images\Office_Online_1.png" alt="Microsoft Office"></img></a></h2>
+					<h3>Office Online</h3>
+					Сохраняйте документы, таблицы и презентации в веб-хранилище OneDrive. Делитесь ими и работайте над ними одновременно с другими людьми. Начните сейчас, это бесплатно!
+
+					<p>Office Online объединяет наиболее часто используемые приложения Office и предоставляет возможность совместного редактирования в реальном времени. При помощи Office Online вы сможете бесплатно работать вместе с друзьями или членами семьи над общими документами, презентациями, электронными таблицами и записными книжками.<br>
+					<ul class="padul">
+					<li>Создавайте документы, электронные таблицы и презентации в Интернете или с помощью классической версии Office</li>
+					<li>Сохраняйте их в онлайн-хранилище OneDrive</li>
+					<li>Делитесь с другими пользователями и работайте вместе в реальном времени</li>
+					</ul>
+					<br>
+					Перейдите на страницу <a href="Office.com">Office.com</a> и начните работу с Office Online, воспользовавшись своей учетной записью Microsoft.</p>
+				</div>
+				<div id="WP">
+					<h2><a href="WindowsPhone.com"><img src="Files\Images\WP.png" alt="Windows Phone" width="800"></img></a></h2>
+					<h3>Windows Phone 8</h3>
+					
+					20 июня 2012 года на организованной Microsoft конференции под названием Windows Phone Summit была анонсирована Windows Phone 8. Главное преимущество восьмой версии — возможность объединить планшеты, смартфоны и персональные компьютеры в единую «экосистему», то есть возможность создания условий для разработчиков, облегчающих портирование программного обеспечения между этими устройствами. Новое поколение платформы будет основано на ядре NT и максимальное разрешение экрана аппаратов будет 1920x1080, в отличие от Windows Phone 7.x, которая основана на ядре CE с разрешением экрана 800×480.
+					<br>
+					29 октября 2012 года Microsoft официально представила следующее поколение платформы. Новшества Windows Phone 8 — Internet Explorer Mobile 10-й версии с функцией обнаружения вредоносных сайтов, поддержка многоядерных процессоров, технология обмена данными NFC, слот для карт памяти и другие. Пользователи получили возможность изменять размер «живых плиток» стартового экрана — теперь их три вида (маленькие, средние и большие).
+					<br>
+					<br>
+					<h3>Windows Phone 8.1</h3>
+					Windows Phone 8.1 — обновление мобильных устройств на базе ОС Windows Phone. Презентация нового обновления прошла 2 апреля 2014 года на ежегодном мероприятии компании Microsoft – //Build/ 2014. 14 апреля 2014 года началась рассылка Developer Preview версии. Автор сайта уже обновился, хе-хе.
+					<h3>Особенности Windows Phone 8.1</h3>
+					<ul class="padul">
+					<li>Action Center - центр уведомлений для Windows Phone 8.1.</li>
+					<li>Экран блокировки - теперь приложения могут не просто работать с экраном блокировки. Они могут тотально его изменять.</li>
+					<li>Три ряда плиток.</li>
+					<li>Cortana. Голосовому ассистенту было отведено много внимания. Об этом будет рассказано в отдельной статье далее.</li>
+					<li>Изменения в магазине. Приложение магазина было переработано, добавлены новые ссылки, новые возможности.</li>
+					<li>Календарь. Существенно улучшено приложение календаря. В него добавлены новые режимы просмотра, он более удобен в использовании.</li>
+					<li>WiFi Sense. С WiFi Sense вы получите новые возможности, которые сделают работу с WiFi более автоматизированной. При этом вам не надо буквально говорить пароль от сети.</li>
+					<li>Более глубока интеграция VoIP-сервисов. Во время звонка вы сможетемоментально переключиться на звонок из сотовой сети на Skype, Viber или другие.</li>
+					<li>Swype-клавиатура. Долгожданная функция, которая перенесет набор на клавиатуре на совершенно новый скоростной уровень.</li>
+					</ul>
+				</div>
+				<div id="WinRT">
+					<h2><a href="WindowsRT.com"><img src="Files\Images\WinRT.png" alt="Windows RT" width="800"></img></a></h2>
+					<h3>Windows RT 8</h3>
+					Windows RT (ранее известная как Windows 8 ARM) — редакция операционной системы Windows 8 компании Microsoft для планшетных и других компьютеров на базе ARM-процессоров.<br>
+					Windows RT не совместима с Windows-приложениями, созданными для процессоров c набором команд x86-x64 (Intel, AMD) и поставляется с планшетными компьютерами на ARM-процессорах компаний-производителей ASUS, Microsoft, Dell, Samsung и Nokia в качестве предустановленной системы.<br>
+					Основным источником пополнения программ является интернет-магазин компании Microsoft Windows Store, содержащий десятки тысяч приложений, большинство из которых доступно бесплатно. Также для Windows RT доступны основные приложения и пакеты. Речь, прежде всего, о наиболее популярных Microsoft Office 2013 (Word, Excel, Outlook, OneNote, Powerpoint), Adobe Photoshop, Abbyy Finereader и ряде других.<br>
+					<h3>Windows RT 8.1</h3>
+					Windows RT 8.1 — это операционная система семейства Windows, которая оптимизирована для тонких и легких компьютеров с увеличенным временем работы батареи. В Windows RT 8.1 работают только встроенные приложения или приложения, скачанные из Магазина Windows. Клиентский компонент Центра обновления Windows автоматически обновляет ПО на компьютере, а Защитник Windows оберегает компьютер от вирусов и вредоносных программ.<br>
+					Действует бесплатное обновление до Windows RT 8.1 из Магазина Windows. Windows RT 8.1 можно установить только на компьютеры или планшеты, уже работающие под управлением Windows RT.
+				</div>
+				<div id="Outlook">
+					<h2><a href="Outlook.com"><img src="Files\Images\Outlook.com.png" alt="Outlook.com" width="800"></img></a></h2>
+					<h3>Outlook.com</h3>
+					Outlook.com — это бесплатная почтовая служба, которая предоставляет вам исключительные возможности.
+					<h3>Особенности Outlook.com</h3>
+					<b>Общий чат для Skype, Facebook и Google</b><br>
+					Общайтесь сразу со всеми друзьями из Skype, Facebook и Google прямо в почте.<br>
+					<b>Работа с Office</b><br>
+					Бесплатно просматривайте и редактируйте документы Word, Excel и PowerPoint прямо в почтовом ящике. Ни вам, ни вашим адресатам не нужно устанавливать Office, и при этом форматирование документов остается без изменений.<br>
+					<b>На связи с друзьями</b><br>
+					Просматривайте новые статусы, фотографии профиля и твиты друзей во время переписки.<br>
+					<b>Усовершенствуйте свое устройство с Windows</b><br>
+					Outlook.com — это эффективная персонализированная почтовая служба, которая идеально подходит для Windows. Войдите в приложение "Почта" в Windows 8.1 со своей учетной записью и откройте для себя уникальные и мощные инструменты упорядочения писем, автоматическую синхронизацию с приложениями "Календарь", OneDrive, "Люди" и другие потрясающие возможности.<br>
+					<b>Оптимально для "Почты Windows"</b><br>
+					Добавьте учетную запись Outlook.com в приложение "Почта" в Windows 8.1 и с удовольствием пользуйтесь уникальными и эффективными функциями для упорядочения писем, например "Очисткой". Таких инструментов вы не найдете в Gmail и Yahoo! Mail. Новостные рассылки и социальные оповещения упорядочиваются автоматически. Кроме того, вы можете настроить автоматические ответы на время отпуска, но только если Outlook.com используется в приложении.<br>
+				</div>
+				<div id="OneDrive">
+					<h2><a href="OneDrive.com"><img src="Files\Images\OneDrive.png" alt="OneDrive" width="800"></img></a></h2>
+					<h3>OneDrive</h3>
+					<b>Одно хранилище абсолютно для всего</b><br>
+					Легко сохраняйте фотографии, видео, документы и другие файлы, а затем делитесь ими — когда угодно, на любом устройстве и совершенно бесплатно. Кроме того, получите 7 ГБ при регистрации.<br>
+					<b>Одно хранилище для всех ваших фотографий</b><br>
+					Ваши любимые фотографии и видео будут в безопасности, даже если с устройством что-нибудь случится. Получите дополнительно 3 ГБ, активировав автоматическое резервное копирование фотографий с камеры. Затем просматривайте свои фотографии в любое время на любом устройстве.<br>
+					<b>Одно хранилище для всех ваших документов</b><br>
+					OneDrive работает с Office, поэтому создавать, редактировать документы и делиться ими очень легко.
+					Сохраняйте документы в OneDrive и работайте с ними на любом устройстве.<br>
+					<b>Одно хранилище для совместного доступа к всевозможным файлам</b><br>
+					Поделитесь одним файлом или целым фотоальбомом — без вложений. Отправляйте сообщения со ссылками на файлы, которыми нужно поделиться, сохраняя конфиденциальность другой информации, хранящейся в OneDrive.<br>
+					<b>OneDrive абсолютно для всего</b><br>
+					Храните свои любимые фотографии, видео, документы, файлы и многое другое и делитесь ими в OneDrive. Зарегистрируйтесь и получите бесплатно 7 ГБ.<br>
+				</div>
+				<div id="opros">
+					<h2>Тест на знание Windows Phone 8.1</h2>
+					<form>
+						<span><span>1.</span> <span>Когда состоится анонс Windows Phone 8.1?</span></span><br>
+						<input type="radio" name="question1" value="0" id="q1a1" /><label for="q1a1"><span></span>На конференции AppSummit (июль)</label><br>
+						<input type="radio" name="question1" value="1" id="q1a2" /><label for="q1a2">На конференции /Build2014 (2-4 апреля)</label><br>
+						<input type="radio" name="question1" value="0" id="q1a3" /><label for="q1a3">На конференции Nokia 19 апреля</label><br>
+						<input type="radio" name="question1" value="0" id="q1a4" /><label for="q1a4">На салоне MWC 2014</label><br>
+						<hr>
+						<span><span>2.</span> <span>Назовите главное новшество WP 8.1?</span></span><br>
+						<input type="radio" name="question2" value="1" id="q2a1" /><label for="q2a1">ИИ Cortana</label><br>
+						<input type="radio" name="question2" value="0" id="q2a2" /><label for="q2a2">Уменьшение роли задней стороны плитки</label><br>
+						<input type="radio" name="question2" value="0" id="q2a3" /><label for="q2a3">Увеличившиеся цифры часов на экране блокировки</label><br>
+						<input type="radio" name="question2" value="0" id="q2a4" /><label for="q2a4">Новый размер плитки</label><br>
+						<hr>
+						<span><span>3.</span> <span>Сменится ли в новой версии ядро?</span></span><br>
+						<input type="radio" name="question3" value="0" id="q3a1" /><label for="q3a1">Да</label><br>
+						<input type="radio" name="question3" value="1" id="q3a2" /><label for="q3a2">Нет</label><br>
+						<hr>
+						<span><span>4.</span> <span>Ожидаются ли другие версии 8.x?</span></span><br>
+						<input type="radio" name="question4" value="0" id="q4a1" /><label for="q4a1">Да, 8.2</label><br>
+						<input type="radio" name="question4" value="1" id="q4a2" /><label for="q4a2">Да, 8.5</label><br>
+						<input type="radio" name="question4" value="0" id="q4a3" /><label for="q4a3">Нет, потом сразу WP 9.x</label><br>
+						<hr>
+						<span><span>5.</span> <span>Функции двойного тапа в WP 8.1?</span></span><br>
+						<input type="radio" name="question5" value="0" id="q5a1" /><label for="q5a1">Только включение экрана</label><br>
+						<input type="radio" name="question5" value="1" id="q5a2" /><label for="q5a2">Включение/выключение экрана</label><br>
+						<input type="radio" name="question5" value="0" id="q5a3" /><label for="q5a3">Только выключение экрана</label><br>
+						<input type="radio" name="question5" value="0" id="q5a4" /><label for="q5a4">Двойного тапа в WP нет</label><br>
+						<hr>
+						<span><span>6.</span> <span>Какая тенденция идёт в политике Microsoft?</span></span><br>
+						<input type="radio" name="question6" value="0" id="q6a1" /><label for="q6a1">Основной заработок на продуктах, а не сервисах</label><br>
+						<input type="radio" name="question6" value="1" id="q6a2" /><label for="q6a2">Сближение Windows, Windows RT и WP к единой системе</label><br>
+						<input type="radio" name="question6" value="0" id="q6a3" /><label for="q6a3">Ежегодная смена CEO</label><br>
+						<input type="radio" name="question6" value="0" id="q6a4" /><label for="q6a4">Удорожание продуктов (Windows, Xbox, Nokia Lumia)</label><br>
+						<hr>
+						<span><span>7.</span> <span>Недавно Microsoft приобрела...</span></span><br>
+						<input type="radio" name="question7" value="0" id="q7a1" /><label for="q7a1">Nokia World</label><br>
+						<input type="radio" name="question7" value="0" id="q7a2" /><label for="q7a2">Foursquare</label><br>
+						<input type="radio" name="question7" value="1" id="q7a3" /><label for="q7a3">Nokia Devices & Services</label><br>
+						<input type="radio" name="question7" value="0" id="q7a4" /><label for="q7a4">Skype</label><br>
+						<hr>
+						<span><span>8.</span> <span>Какое название у новой консоли семейтсва Xbox?</span></span><br>
+						<input type="radio" name="question8" value="0" id="q8a1" /><label for="q8a1">361</label><br>
+						<input type="radio" name="question8" value="0" id="q8a2" /><label for="q8a2">365</label><br>
+						<input type="radio" name="question8" value="0" id="q8a3" /><label for="q8a3">720</label><br>
+						<input type="radio" name="question8" value="1" id="q8a4" /><label for="q8a4">One</label><br>
+						<hr>
+						<span><span>9.</span> <span>В каком форм-факторе устройств уже есть встроенный Office?</span></span><br>
+						<input type="radio" name="question9" value="1" id="q9a1" /><label for="q9a1">Смартфоны на Windows Phone</label><br>
+						<input type="radio" name="question9" value="0" id="q9a2" /><label for="q9a2">Планшеты на Windows RT</label><br>
+						<input type="radio" name="question9" value="0" id="q9a3" /><label for="q9a3">ПК на Windows</label><br>
+						<hr>
+						<span><span>10.</span> <span>"Плоский стиль" у Microsoft - это разновидность... </span></span><br>
+						<input type="radio" name="question10" value="1" id="q10a1" /><label for="q10a1">стиля flat</label><br>
+						<input type="radio" name="question10" value="0" id="q10a2" /><label for="q10a2">сквероморфизма</label><br>
+						<input type="radio" name="question10" value="0" id="q10a3" /><label for="q10a3">стиля modern</label><br>
+						<input type="radio" name="question10" value="0" id="q10a4" /><label for="q10a4">барокко</label><br>
+						<hr>
+						<br>
+						<br>
+						<div class="button_1" onclick="Finishtest()">Готово</div>
+					</form>
+				</div>
+				<div id="time" align="right">
+					<script language="JavaScript">
+					<!--
+					var pos = document.getElementById("time");
+					function time() {
+					var today = new Date();
+					var day_of_week = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+					var month_of_year = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+					var day_ = day_of_week[today.getDay()];
+					var date_ = today.getDate();
+					var month_ = month_of_year[today.getMonth()];
+					var year_ = today.getFullYear();
+					var hours_ = today.getHours();
+					var min_ = today.getMinutes();
+					var sec_ = today.getSeconds();
+					var zerom = zeros = '';
+					if(min_ < 10) zerom = '0';
+					if(sec_ < 10) zeros = '0';
+					pos.innerHTML = day_+', '+date_+' '+month_+' '+year_+' г., '+hours_+':'+zerom+min_+':'+zeros+sec_;
+					}
+					setInterval(time, 1);
+					//-->
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
